@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		123B1C2A1E1401F000AA1C8C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 123B1C291E1401F000AA1C8C /* Media.xcassets */; };
+		125896971E141C25002785B2 /* Default-568h.png in Resources */ = {isa = PBXBuildFile; fileRef = 125896961E141C25002785B2 /* Default-568h.png */; };
 		4C1884E0151ABD8100C6DF63 /* ScrollActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1884DF151ABD8100C6DF63 /* ScrollActor.m */; };
 		4C1884E3151ABEB000C6DF63 /* ExitActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1884E2151ABEB000C6DF63 /* ExitActor.m */; };
 		4C1884E8151B545400C6DF63 /* UILayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1884E7151B545400C6DF63 /* UILayer.m */; };
@@ -710,6 +711,7 @@
 
 /* Begin PBXFileReference section */
 		123B1C291E1401F000AA1C8C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		125896961E141C25002785B2 /* Default-568h.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h.png"; sourceTree = "<group>"; };
 		4C1884DE151ABD8100C6DF63 /* ScrollActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollActor.h; sourceTree = "<group>"; };
 		4C1884DF151ABD8100C6DF63 /* ScrollActor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollActor.m; sourceTree = "<group>"; };
 		4C1884E1151ABEB000C6DF63 /* ExitActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExitActor.h; sourceTree = "<group>"; };
@@ -1666,6 +1668,7 @@
 		4C5ED9B215191CF600FEAD81 /* Ninja vs Samurai */ = {
 			isa = PBXGroup;
 			children = (
+				125896961E141C25002785B2 /* Default-568h.png */,
 				4C72E161151A503900FC463B /* A* */,
 				4C5EDB4B15193DA200FEAD81 /* Actors */,
 				4C5EDB2C15191F0900FEAD81 /* Layers */,
@@ -3332,6 +3335,7 @@
 				4CCE8D8B152E47B200F298A4 /* 5-5-ipadhd.tmx in Resources */,
 				4CCE8D8C152E47B200F298A4 /* 5-5.tmx in Resources */,
 				4CCE8D8D152E47B200F298A4 /* 5-6-hd.tmx in Resources */,
+				125896971E141C25002785B2 /* Default-568h.png in Resources */,
 				4CCE8D8E152E47B200F298A4 /* 5-6-ipad.tmx in Resources */,
 				4CCE8D8F152E47B200F298A4 /* 5-6-ipadhd.tmx in Resources */,
 				4CCE8D90152E47B200F298A4 /* 5-6.tmx in Resources */,
@@ -3560,7 +3564,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -3589,7 +3593,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
@@ -3636,7 +3640,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.samuraivsninja.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
 			};
