@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		123B1C2A1E1401F000AA1C8C /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 123B1C291E1401F000AA1C8C /* Media.xcassets */; };
 		4C1884E0151ABD8100C6DF63 /* ScrollActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1884DF151ABD8100C6DF63 /* ScrollActor.m */; };
 		4C1884E3151ABEB000C6DF63 /* ExitActor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1884E2151ABEB000C6DF63 /* ExitActor.m */; };
 		4C1884E8151B545400C6DF63 /* UILayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4C1884E7151B545400C6DF63 /* UILayer.m */; };
@@ -708,6 +709,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		123B1C291E1401F000AA1C8C /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		4C1884DE151ABD8100C6DF63 /* ScrollActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollActor.h; sourceTree = "<group>"; };
 		4C1884DF151ABD8100C6DF63 /* ScrollActor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollActor.m; sourceTree = "<group>"; };
 		4C1884E1151ABEB000C6DF63 /* ExitActor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExitActor.h; sourceTree = "<group>"; };
@@ -1708,6 +1710,7 @@
 				4CAD43DA151EBAF700529A8A /* Icon~ipad.png */,
 				4C5ED9C815191CF600FEAD81 /* Info.plist */,
 				4CAD43D4151EBA4D00529A8A /* iTunesArtwork.png */,
+				123B1C291E1401F000AA1C8C /* Media.xcassets */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -2759,7 +2762,7 @@
 				TargetAttributes = {
 					4C5ED99B15191CF500FEAD81 = {
 						DevelopmentTeam = JQNK74493B;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -3128,6 +3131,7 @@
 				4CCE8CC3152E47B200F298A4 /* 3-3-ipadhd.tmx in Resources */,
 				4CCE8CC4152E47B200F298A4 /* 3-3.tmx in Resources */,
 				4CCE8CC5152E47B200F298A4 /* 3-4-hd.tmx in Resources */,
+				123B1C2A1E1401F000AA1C8C /* Media.xcassets in Resources */,
 				4CCE8CC6152E47B200F298A4 /* 3-4-ipad.tmx in Resources */,
 				4CCE8CC7152E47B200F298A4 /* 3-4-ipadhd.tmx in Resources */,
 				4CCE8CC8152E47B200F298A4 /* 3-4.tmx in Resources */,
@@ -3535,7 +3539,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = NO;
 				DEVELOPMENT_TEAM = JQNK74493B;
 				ENABLE_BITCODE = NO;
@@ -3549,7 +3556,10 @@
 					"-lz",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.samuraivsninja.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6662b1d7-13e6-413c-9d1f-d0928afb42d9";
+				PROVISIONING_PROFILE_SPECIFIER = samuraivsninja;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
@@ -3559,7 +3569,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				COPY_PHASE_STRIP = YES;
 				DEVELOPMENT_TEAM = JQNK74493B;
 				ENABLE_BITCODE = NO;
@@ -3572,7 +3585,10 @@
 					"-lz",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.samuraivsninja.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "6662b1d7-13e6-413c-9d1f-d0928afb42d9";
+				PROVISIONING_PROFILE_SPECIFIER = samuraivsninja;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				WRAPPER_EXTENSION = app;
@@ -3602,9 +3618,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
-				DEVELOPMENT_TEAM = JQNK74493B;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_BITCODE = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Ninja vs Samurai/Prefix.pch";
@@ -3615,6 +3634,7 @@
 					"-lz",
 					"-ObjC",
 				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.twokingstudio.samuraivsninja.100;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
